@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.container {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    max-width: 800px;
+    width: 100%;
+}
+
+.president-image {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.president-photo {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 12px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.president-info h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.president-info p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+h1 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.counter {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.counter.simple {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.time-block {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 1.5rem;
+    border-radius: 10px;
+    min-width: 120px;
+}
+
+.time-block.total-days {
+    min-width: 200px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.time-block span {
+    display: block;
+}
+
+.time-block span:first-child {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.time-block.total-days span:first-child {
+    font-size: 4rem;
+}
+
+.label {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.last-title {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+    .counter {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    
+    .time-block {
+        min-width: 100px;
+        padding: 1rem;
+    }
+    
+    .time-block.total-days {
+        min-width: 150px;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .president-photo {
+        width: 200px;
+        height: 200px;
+        border-width: 8px;
+    }
+
+    .president-info h2 {
+        font-size: 1.5rem;
+    }
+
+    .president-info p {
+        font-size: 1rem;
+    }
+} 
